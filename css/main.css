@@ -12,7 +12,7 @@ html{
 }
 
 body{
-    width: 90%;
+    width: 100%;
     height: 100%;
     background: url("../images/sitebg3.png") no-repeat center fixed;
     background-size: cover;
@@ -41,8 +41,8 @@ img{
 
 /*Start reusable*/
 .container{
-    width:100%;
-    max-width: 80rem;
+    width:90%;
+    max-width: 120rem;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -147,9 +147,9 @@ li{
 }
 
 .menu-toggler{
-    position: absolute;
-    top: 5rem;
-    right: 5rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
     width:5rem;
     height: 4rem;
     display: flex;
@@ -238,7 +238,7 @@ li{
 }
 
 .about-heading h1{
-    font-size: 8rem;
+    font-size: 10rem;
     opacity: .3;
 }
 
@@ -253,6 +253,10 @@ li{
     width: 50rem;
     
 }
+.profile-img img {
+    border-radius: 25%;
+   
+}
 
 .about-details{
     flex: 1;
@@ -264,7 +268,7 @@ li{
 
 .social-media i{
     font-size: 3rem;
-    transition: color 550ms;
+    transition: color 650ms;
 }
 
 .fa-facebook-square:hover{
@@ -503,6 +507,10 @@ input[type="submit"]:hover{
 .copyright p{
     font-size: 1.4rem;
 }
+
+#number{
+    font-size: 1.1rem;
+}
 /*End Footer*/
 
 /*start animation*/
@@ -530,12 +538,12 @@ input[type="submit"]:hover{
     }
 
     .landing-text h1{
-        font-size: 1.5rem;
+        font-size: 7.5rem;
     }
 
     .landing-text h6{
         font-size:
-        1.7rem;
+        2.1rem;
     }
 
     .nav-list{

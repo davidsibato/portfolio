@@ -18,6 +18,7 @@ body{
     background-size: cover;
     background-color: #16162d;
     backface-visibility: unset;
+    background-blend-mode: difference;
 }
 
 
@@ -29,6 +30,11 @@ section{
 a{
     text-decoration: none;
     color: #eee;
+}
+
+small{
+    font-weight: bold;
+    text-decoration: rgba(248, 226, 126, 0);
 }
 
 p{
@@ -157,7 +163,7 @@ li{
 .menu-toggler{
     position: fixed;
     top: 1rem;
-    right: 1rem;
+    right: 10rem;
     width:5rem;
     height: 4rem;
     display: flex;
@@ -238,6 +244,8 @@ li{
     display:flex;
     align-items: center;
     justify-content: center;
+    border-radius: .8rem;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .about-heading{
@@ -300,9 +308,9 @@ li{
 /*End About*/
 
 
-/*Start Service*/
+/*Start skill*/
 .my-skills{
-    margin-top: 10rem;
+    margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 2.5rem;
@@ -314,7 +322,8 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 1rem;
+    margin-top: 0em;
 }
 
 .skill h1{
@@ -339,7 +348,7 @@ li{
     margin: auto;
     transform:rotate(-45deg);
 }
-/*End services*/
+/*End skill*/
 
 
 /*Start portfolio*/
@@ -455,11 +464,17 @@ background-color: #313534;
 /*Contact*/
 .contact{
     background-color: #221e3f;
+    opacity: .6;
+    text-align: center;
 }
 
 form{
     width: 70%;
     margin: 0 auto;
+}
+
+.contact i{
+    font-size: 10rem;
 }
 
 form label{
@@ -547,8 +562,11 @@ input[type="submit"]:hover{
     body{
         width: 100%;
         height: 100%;
-        background: url("../images/sitebg3.png") no-repeat center fixed;
+        background: url("../images/luca-bravo-9l_326FISzk-unsplash.jpg") no-repeat center fixed;
         background-size: cover;
+        background-color: #16162d;
+        backface-visibility: unset;
+        background-blend-mode: difference;
     }
 
     .landing-text h1{
@@ -601,8 +619,25 @@ input[type="submit"]:hover{
     .timeline .date::after{
         left:-3.5rem;
     }
+
+    .contact i{
+        font-size: 6rem;
+    }
 }
 @media screen and (max-width: 600px){
+    
+    .container{
+        width:100%;
+        max-width: 120rem;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .container .profile-img{
+        max-width: 20rem;
+    }
+
     .menu-toogler{
         top: 2rem;
         right: 2rem;
@@ -626,7 +661,8 @@ input[type="submit"]:hover{
     }
 
     .profile-img{
-        margin: 0 0 7rem 0;
+        margin: 0 0 5rem -12rem;
+        border-radius: 70%;
     }
     .portfolio-item{
         flex-direction: column;
@@ -647,6 +683,10 @@ input[type="submit"]:hover{
 
     .timeline .date::before{
         font-size: 1.4rem;
+    }
+
+    .contact i{
+        font-size: 4rem;
     }
 
     form{

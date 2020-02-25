@@ -1,14 +1,9 @@
-<html>
-david sibato is here
-<canvas id = "gameCanvas" width = "800"
-height ="600"></canvas>
-<script>
 var canvas;
 var canvansContext;
 var ballX = 50;
 var ballSpeedX = 10
 var ballY = 50;
-var ballSpeedY = 4;
+var ballSpeedY = 10;
 
 var player1Score = 0;
 var player2Score =0;
@@ -200,7 +195,3 @@ const PADDLE_THICKNESS =10;
 		canvansContext.fillStyle = drawColor;
 		canvansContext.fillRect(leftX,topY,width,height);
 	}
-</script>
-
-
-</html>
